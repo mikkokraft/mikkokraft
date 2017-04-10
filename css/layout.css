@@ -1,0 +1,170 @@
+/*
+1. Universal rules for layout elements.
+2. 1-tile setup.
+3. 2-tile setup.
+4. 3-tile setup.
+5. 4-tile setup.
+6. 5-tile setup.
+*/
+
+/*  
+1. Universal rules
+*/
+/*
+#layout_wrapper { /* This is main wrapper for the layout. */
+/*	overflow: hidden;
+}
+*/
+body {
+	min-width : 150px;
+	max-width : 2500px;	
+	margin-left : auto;
+	margin-right : auto;
+}
+
+.layout_box {
+	float : left;
+	position : relative;
+}
+.layout_content {
+	position : absolute;
+	left : 0px;
+    right : 0px;
+    top : 0px;
+    bottom : 0px;
+} 
+
+
+/* 
+2. 1-tile setup.
+*/
+@media only screen and (max-width : 299px) {	
+	.layout_box {
+		width : 100%;
+		padding-bottom: 100%;
+	}
+	/* .layout_first is displayed without special rules. */
+    .layout_second {
+	    display: none;
+    }
+    .layout_content {
+    	margin-bottom : 0.5%;
+    	padding : 0.5%;
+	}
+	#layout_wrap {
+		margin : 0%;
+	}
+}
+
+/*  
+3. 2-tile setup.
+*/
+@media only screen and (min-width : 300px) and (max-width : 599px) {
+	.layout_box {
+		width : 50%;
+		padding-bottom: 50%;
+	}
+	.layout_first {
+        width: 100%!important;
+    }
+    .layout_second {
+	    display: none;
+    } 
+    .layout_content {
+    	margin : 0.5%;
+    	padding : 0.5%;
+	}
+	.layout_first .layout_content {
+		margin : 0.25%;
+		padding : 0.25%;
+	}
+	#layout_wrap {
+		margin : 0.5%;
+	}
+}
+
+
+/*  
+4. 3-tile setup.
+*/
+@media only screen and (min-width : 600px) and (max-width : 999px) {
+	.layout_box {
+		width : 33.3%;
+		padding-bottom: 33.3%;
+	}
+	.layout_first {
+        width: 66.6%!important;
+    }
+    /* .layout_second is displayed without special rules. */
+    .layout_content {
+    	margin : 1%;
+    	padding : 1%;
+	}
+	.layout_first .layout_content {
+		margin : 0.5%;
+		padding : 0.5%;
+	}
+	#layout_wrap {
+		margin : 0.75%;
+	}
+}
+
+
+/*  
+5. 4-tile setup.
+*/
+@media only screen and (min-width : 1000px) and (max-width : 1499px) {
+	.layout_box {
+		width : 25%;
+		padding-bottom: 25%;
+	}
+	.layout_first {
+        width: 75%!important;
+    }
+    /* .layout_second is displayed without special rules. */
+    .layout_content {
+    	margin : 1.5%;
+    	padding : 1.5%;
+	}
+	.layout_first .layout_content {
+		margin : 0.5%;
+		padding : 0.5%;
+	}
+	#layout_wrap {
+		margin : 1%;
+	}
+}
+
+
+/*  
+6. 5-tile setup.
+*/
+@media only screen and (min-width : 1500px) {
+	.layout_box {
+		width : 20%;
+		padding-bottom: 20%;
+	}
+	.layout_first {
+        width: 60%!important;
+    }
+    .layout_second {
+	    width: 40%!important;
+    }
+    .layout_content {
+    	margin : 3%;
+    	padding : 3%;
+	}
+	.layout_first .layout_content {
+		margin : 1%;
+		padding : 1%;
+	}
+	.layout_second .layout_content {
+		margin : 1.5%;
+		padding : 1.5%;
+	}
+	#layout_wrap {
+		margin : 1.25%;
+	}
+	
+}
+
