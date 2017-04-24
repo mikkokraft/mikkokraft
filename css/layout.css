@@ -16,15 +16,17 @@
 }
 */
 body {
-	min-width : 150px;
+	min-width : 200px;
 	max-width : 2500px;	
 	margin-left : auto;
 	margin-right : auto;
+	
 }
 
 .layout_box {
 	float : left;
 	position : relative;
+	overflow: hidden;
 }
 .layout_content {
 	position : absolute;
@@ -34,11 +36,30 @@ body {
     bottom : 0px;
 } 
 
+#layout_wrap_toolbar {
+    width : 100%;
+    min-width : 200px;
+    position : fixed;
+    top : 0px; 
+}
+.layout_toolbar_content {
+	position : absolute;
+	left : 0px;
+    right : 0px;
+    top : 0px;
+    bottom : 0px;
+} 
+
 
 /* 
-2. 1-tile setup.
+2. 1-tile setups.
 */
-@media only screen and (max-width : 299px) {	
+@media only screen and (max-width : 199px) {
+	* {
+		display: none;
+	}
+}
+@media only screen and (min-width : 200px) and (max-width : 299px) {	
 	.layout_box {
 		width : 100%;
 		padding-bottom: 100%;
@@ -52,14 +73,18 @@ body {
     	padding : 0.5%;
 	}
 	#layout_wrap {
-		margin : 0%;
+		margin : 11.5% 0%;
+	}
+	#layout_wrap_toolbar {
+    	padding-bottom : 11%; 
+    	
 	}
 }
 
 /*  
 3. 2-tile setup.
 */
-@media only screen and (min-width : 300px) and (max-width : 599px) {
+@media only screen and (min-width : 300px) and (max-width : 499px) {
 	.layout_box {
 		width : 50%;
 		padding-bottom: 50%;
@@ -79,7 +104,10 @@ body {
 		padding : 0.25%;
 	}
 	#layout_wrap {
-		margin : 0.5%;
+		margin : 6.75% 0.5%;
+	}
+	#layout_wrap_toolbar {
+    	padding-bottom : 6.5%; 
 	}
 }
 
@@ -87,7 +115,7 @@ body {
 /*  
 4. 3-tile setup.
 */
-@media only screen and (min-width : 600px) and (max-width : 999px) {
+@media only screen and (min-width : 500px) and (max-width : 849px) {
 	.layout_box {
 		width : 33.3%;
 		padding-bottom: 33.3%;
@@ -105,7 +133,10 @@ body {
 		padding : 0.5%;
 	}
 	#layout_wrap {
-		margin : 0.75%;
+		margin : 5.625% 0.75%;
+	}
+	#layout_wrap_toolbar {
+    	padding-bottom : 5.25%; 
 	}
 }
 
@@ -113,7 +144,7 @@ body {
 /*  
 5. 4-tile setup.
 */
-@media only screen and (min-width : 1000px) and (max-width : 1499px) {
+@media only screen and (min-width : 850px) and (max-width : 1349px) {
 	.layout_box {
 		width : 25%;
 		padding-bottom: 25%;
@@ -131,7 +162,10 @@ body {
 		padding : 0.5%;
 	}
 	#layout_wrap {
-		margin : 1%;
+		margin : 4.5% 1%;
+	}
+	#layout_wrap_toolbar {
+    	padding-bottom : 4%; 
 	}
 }
 
@@ -139,7 +173,7 @@ body {
 /*  
 6. 5-tile setup.
 */
-@media only screen and (min-width : 1500px) {
+@media only screen and (min-width : 1350px) {
 	.layout_box {
 		width : 20%;
 		padding-bottom: 20%;
@@ -163,7 +197,10 @@ body {
 		padding : 1.5%;
 	}
 	#layout_wrap {
-		margin : 1.25%;
+		margin : 4.125% 1.25%;
+	}
+	#layout_wrap_toolbar {
+    	padding-bottom : 3.5%; 
 	}
 	
 }

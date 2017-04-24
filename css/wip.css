@@ -1,7 +1,48 @@
 .layout_content {
 	background-color : lightblue;
-    /*margin:10px;*/
 }
-.layout_box {
-	/*background-color : gray;*/
+
+#layout_wrap_toolbar {
+
+    background : red;
 }
+
+
+
+
+@media only screen and (max-width : 299px) {	
+	
+}
+
+/*  
+3. 2-tile setup.
+*/
+@media only screen and (min-width : 300px) and (max-width : 599px) {
+
+}
+
+
+/*  
+4. 3-tile setup.
+*/
+@media only screen and (min-width : 600px) and (max-width : 999px) {
+
+}
+
+
+/*  
+5. 4-tile setup.
+*/
+@media only screen and (min-width : 1000px) and (max-width : 1499px) {
+	
+}
+
+
+/*  
+6. 5-tile setup.
+*/
+@media only screen and (min-width : 1500px) {
+	
+	
+}
+
