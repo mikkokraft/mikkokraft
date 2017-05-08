@@ -38,7 +38,6 @@ body {
 
 #layout_wrap_toolbar {
     width : 100%;
-    min-width : 200px;
     position : fixed;
     top : 0px; 
 }
@@ -73,7 +72,7 @@ body {
     	padding : 0.5%;
 	}
 	#layout_wrap {
-		margin : 11.5% 0%;
+		margin : 11.25% 0%;
 	}
 	#layout_wrap_toolbar {
     	padding-bottom : 11%; 
@@ -125,15 +124,15 @@ body {
     }
     /* .layout_second is displayed without special rules. */
     .layout_content {
-    	margin : 1%;
-    	padding : 1%;
+    	margin : 0.6%;
+    	padding : 0.6%;
 	}
 	.layout_first .layout_content {
-		margin : 0.5%;
-		padding : 0.5%;
+		margin : 0.3%;
+		padding : 0.3%;
 	}
 	#layout_wrap {
-		margin : 5.625% 0.75%;
+		margin : 5.5% 0.3%;
 	}
 	#layout_wrap_toolbar {
     	padding-bottom : 5.25%; 
@@ -154,15 +153,15 @@ body {
     }
     /* .layout_second is displayed without special rules. */
     .layout_content {
-    	margin : 1.5%;
-    	padding : 1.5%;
+    	margin : 0.6%;
+    	padding : 0.6%;
 	}
 	.layout_first .layout_content {
-		margin : 0.5%;
-		padding : 0.5%;
+		margin : 0.2%;
+		padding : 0.2%;
 	}
 	#layout_wrap {
-		margin : 4.5% 1%;
+		margin : 4.1% 0.25%;
 	}
 	#layout_wrap_toolbar {
     	padding-bottom : 4%; 
@@ -185,19 +184,19 @@ body {
 	    width: 40%!important;
     }
     .layout_content {
-    	margin : 3%;
-    	padding : 3%;
+    	margin : 0.75%;
+    	padding : 0.75%;
 	}
 	.layout_first .layout_content {
-		margin : 1%;
-		padding : 1%;
+		margin : 0.25%;
+		padding : 0.25%;
 	}
 	.layout_second .layout_content {
-		margin : 1.5%;
-		padding : 1.5%;
+		margin : 0.375%;
+		padding : 0.375%;
 	}
 	#layout_wrap {
-		margin : 4.125% 1.25%;
+		margin : 3.6% 0.2%;
 	}
 	#layout_wrap_toolbar {
     	padding-bottom : 3.5%; 
