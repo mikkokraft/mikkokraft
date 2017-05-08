@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta name="referrer" content="krafthanddyed.com">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="simplecart/simpleCart.min.js"></script>
+
+  <script>
+
+simpleCart({
+    checkout: { 
+        type: "SendForm" , 
+        url: "https://formspree.io/mikkokraft@gmail.com" ,
+        action: "https://formspree.io/mikkokraft@gmail.com"
+    } 
+});
+
+	</script>
+	
+</head>
+<body>
+
+You have <span class="simpleCart_quantity"></span> items in your Cart.
+Cart total: <div class="simpleCart_total"></div>
+
+
+<a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+<a href="javascript:;" class="simpleCart_empty">Empty</a>
+
+
+
+ <div class="simpleCart_shelfItem">
+    	<h2 class="item_name"> Awesome T-shirt </h2>
+    	<select class="item_size">
+        	<option value="Small"> Small </option>
+        	<option value="Medium"> Medium </option>
+        	<option value="Large"> Large </option>
+    	</select>
+    	<input type="text" value="1" class="item_Quantity">
+    	<span class="item_price">$35.99</span>
+    	<a class="item_add" href="javascript:;"> Add to Cart </a>
+	</div>
+  
+  
+  <div class="simpleCart_items"></div>
+  
+</body>
+</html>
