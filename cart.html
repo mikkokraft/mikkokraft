@@ -20,7 +20,7 @@ simpleCart({
 });
 
 simpleCart.bind( 'beforeCheckout' , function( data ){
- 	data.cartid = "ABC-123456789";
+ 	data.cartid = ('#cartid').val();
 });
 
 	</script>
@@ -53,6 +53,12 @@ Cart total: <div class="simpleCart_total"></div>
   
   
   <div class="simpleCart_items"></div>
+  
+  <form action="/action_page.php">
+  First name:<br>
+  <input id="cartid" type="text" name="firstname" value="Mickey">
+</form> 
+  
   
 </body>
 </html>
