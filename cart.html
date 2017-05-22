@@ -12,8 +12,15 @@ simpleCart({
     checkout: { 
         type: "SendForm" , 
         url: "https://formspree.io/mikkokraft@gmail.com" ,
-        action: "https://formspree.io/mikkokraft@gmail.com"
+        extra_data: {
+          	storename: "Bob's cool plumbing store",
+          	cartid: "12321321"
+        }
     } 
+});
+
+simpleCart.bind( 'beforeCheckout' , function( data ){
+ 	data.cartid = "ABC-123456789";
 });
 
 	</script>
@@ -47,14 +54,5 @@ Cart total: <div class="simpleCart_total"></div>
   
   <div class="simpleCart_items"></div>
   
-  
-  <form action="https://formspree.io/mikkokraft@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
-  
-
 </body>
 </html>
