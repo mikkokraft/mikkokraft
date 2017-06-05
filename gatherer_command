@@ -1,0 +1,9 @@
+java Gatherer shelf/shelf_item_head.html shelf/shelftasklist shelf/shelf_item_foot.html shelf/shelf.html index/indextasklist index_new2.html
+
+//Expecting input of:
+    //0: beginning of shelf item file
+    //1: shelf items file list
+    //2: end of shelf item file
+    //3: shelf output file
+    //4: main tasklist
+    //5: output file
