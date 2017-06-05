@@ -1,0 +1,9 @@
+h2 {
+	margin : 0;
+}
+.layout_content {
+	background : LIGHTGRAY;
+}
+#layout_wrap_toolbar {
+    background : red;
+}
