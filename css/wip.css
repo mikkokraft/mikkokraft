@@ -4,7 +4,9 @@
 
 
 
-
+.product:hover .simpleCart_shelfItem {
+	display: none;
+}
 
 
 
